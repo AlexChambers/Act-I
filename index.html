@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Night Write</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="download.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body onload="init();">
+    <h1 align="center">Act I</h1>
+    <p align="center"><textarea rows="1" style="height:1em;" id="text" autofocus placeholder="Begin typing..."></textarea></p>
+    <p align="center"><button onclick="saveTextAsFile()" class="download">Download</button></p>
+    <script>
+
+      // Tab key adds spaces
+      document.querySelector("textarea").addEventListener('keydown',function(e) {
+        if(e.keyCode === 9) { // tab was pressed
+            // get caret position/selection
+            var start = this.selectionStart;
+            var end = this.selectionEnd;
+
+            var target = e.target;
+            var value = target.value;
+
+            // set textarea value to: text before caret + tab + text after caret
+            target.value = value.substring(0, start)
+                        + "\t"
+                        + value.substring(end);
+
+            // put caret at right position again (add one for the tab)
+            this.selectionStart = this.selectionEnd = start + 1;
+
+            // prevent the focus lose
+            e.preventDefault();
+        }
+      }, false);
+
+      //Auto adjust textarea height
+      //Kudos to Obsidian @ http://stackoverflow.com/questions/454202/creating-a-textarea-with-auto-resize
+      function h(e) {
+        $(e).css({'height':'auto','overflow-y':'hidden'}).height(e.scrollHeight);
+      }
+      $('textarea').each(function () {
+        h(this);
+      }).on('input', function () {
+        h(this);
+      });
+    </script>
+</body>
+</html>

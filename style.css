@@ -1,0 +1,71 @@
+body {
+    background-color: #222222;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+}
+h1 {
+    color: #555555;
+}
+textarea {
+    font-size: 1.2em;
+    font-family: "Courier New", Courier, monospace;
+    color: #117711;
+    border: 0 none white;
+    overflow: hidden;
+    padding: 0;
+    outline: none;
+    background-color: #1F1F1F;
+    resize: none;
+    width: 90%;
+}
+
+button.download {
+  display: inline-block;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 0.317rem;
+  background-color: #333333;
+  color: #777777;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+button.download:hover {
+	background-color: #117711;
+  color: #eee;
+}
+
+/* Selection */
+::-moz-selection { /* Code for Firefox */
+    color: #aaaaaa;
+    background: #000000;
+}
+::selection {
+    color: #aaaaaa;
+    background: #000000;
+}
+
+/* Placeholder */
+::-webkit-input-placeholder {
+   color: #115511;
+   font-style: italic;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #115511;
+  font-style: italic;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #115511;
+  font-style: italic;
+}
+:-ms-input-placeholder {
+  color: #115511;
+  font-style: italic;
+}
