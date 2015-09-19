@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Night Write</title>
+<title>Act I</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <script type="text/javascript" src="download.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 
 <body onload="init();">
     <h1 align="center">Act I</h1>
-    <p align="center"><textarea rows="1" style="height:1em;" id="text" autofocus placeholder="Begin typing..."></textarea></p>
-    <p align="center"><button onclick="saveTextAsFile()" class="download">Download</button></p>
+    <p align="center">
+      <textarea rows="1" style="height:1em;" id="text" autofocus placeholder="Begin typing..."></textarea>
+    </p>
+    <p align="center"><button title="Download" onclick="saveTextAsFile()" class="download"><span class="icon fa fa-download"></span></button></p>
     <script>
-
       // Tab key adds spaces
       document.querySelector("textarea").addEventListener('keydown',function(e) {
         if(e.keyCode === 9) { // tab was pressed
             // get caret position/selection
             var start = this.selectionStart;
             var end = this.selectionEnd;
-
             var target = e.target;
             var value = target.value;
 

@@ -1,5 +1,5 @@
 body {
-    background-color: #222222;
+    background-color: #000000;
     font-family: "Courier New", Courier, monospace;
     font-size: 18px;
 }
@@ -9,12 +9,12 @@ h1 {
 textarea {
     font-size: 1.2em;
     font-family: "Courier New", Courier, monospace;
-    color: #117711;
+    color: #999999;
     border: 0 none white;
     overflow: hidden;
     padding: 0;
     outline: none;
-    background-color: #1F1F1F;
+    background-color: #222222;
     resize: none;
     width: 90%;
 }
@@ -54,18 +54,18 @@ button.download:hover {
 
 /* Placeholder */
 ::-webkit-input-placeholder {
-   color: #115511;
+   color: #555555;
    font-style: italic;
 }
 :-moz-placeholder { /* Firefox 18- */
-  color: #115511;
+  color: #555555;
   font-style: italic;
 }
 ::-moz-placeholder {  /* Firefox 19+ */
-  color: #115511;
+  color: #555555;
   font-style: italic;
 }
 :-ms-input-placeholder {
-  color: #115511;
+  color: #555555;
   font-style: italic;
 }
