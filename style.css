@@ -4,12 +4,12 @@ body {
     font-size: 18px;
 }
 h1 {
-    color: #555555;
+    color: #CCCCCC;
 }
 textarea {
     font-size: 1.2em;
     font-family: "Courier New", Courier, monospace;
-    color: #999999;
+    color: #CCCCCC;
     border: 0 none white;
     overflow: hidden;
     padding: 0;
@@ -26,7 +26,7 @@ button.download {
   border: 0;
   border-radius: 0.317rem;
   background-color: #333333;
-  color: #777777;
+  color: #CCCCCC;
   text-decoration: none;
   font-weight: 700;
   font-size: 1rem;
@@ -38,18 +38,18 @@ button.download {
 }
 
 button.download:hover {
-	background-color: #117711;
-  color: #eee;
+	background-color: #119911;
+  color: #CCCCCC;
 }
 
 /* Selection */
 ::-moz-selection { /* Code for Firefox */
-    color: #aaaaaa;
-    background: #000000;
+    color: #AAAAAA;
+    background: #117711;
 }
 ::selection {
-    color: #aaaaaa;
-    background: #000000;
+    color: #AAAAAA;
+    background: #117711;
 }
 
 /* Placeholder */
